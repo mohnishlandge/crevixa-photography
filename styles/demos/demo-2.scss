@@ -1,0 +1,62 @@
+.demo-2 {
+  height: 100%;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+.demo-2__header {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+  left: 0;
+  opacity: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+
+  .loaded & {
+    opacity: 1;
+    transition: opacity 0.4s ease;
+  }
+}
+
+.demo-2__title {
+  font: 800 20rem/1 "moret", serif;
+}
+
+.demo-2__description {
+  font-size: 2rem;
+  margin-top: -1rem;
+  opacity: 0.75;
+}
+
+.demo-2__gallery {
+  height: 100%;
+  position: relative;
+  width: 5000%;
+  visibility: hidden;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.demo-2__gallery__figure {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.demo-2__gallery__image {
+  height: 20%;
+  left: 0;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
